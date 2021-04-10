@@ -22,7 +22,6 @@ function App() {
     const url = "https://breaking-bad-quotes.herokuapp.com/v1/quotes";
     const api = await fetch(url);
     const frase = await api.json();
-    console.log(frase);
     guardarFrase(frase[0]);
   };
 
